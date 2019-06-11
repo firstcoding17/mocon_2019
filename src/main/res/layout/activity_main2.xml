@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:orientation="vertical"
+    android:gravity="center"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/membershipTop"
+        android:layout_marginBottom="80dp"
+        >
+        <TextView
+            android:id="@+id/membership_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="회원가입"
+            android:textSize="30dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_centerHorizontal="true"
+            android:background="#1DCFBE"
+            android:orientation="vertical"
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="80dp"
+            ></LinearLayout>
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:id="@+id/membership_layout"
+        android:layout_below="@id/membershipTop"
+        android:layout_marginBottom="80dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="7dp"
+            android:layout_marginBottom="5dp"
+            android:text="비밀번호"
+            android:textSize="10dp" />
+
+        <EditText
+            android:id="@+id/membership_nickname"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_alignStart="@+id/password_bar"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/loginbar"
+            android:ems="16"
+            android:inputType="textPassword"
+            android:text=""
+            android:textSize="17dp"
+            android:textColor="#000000"
+            android:textCursorDrawable="@null"/>
+
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="7dp"
+            android:layout_marginBottom="5dp"
+            android:text="비밀번호"
+            android:textSize="10dp" />
+
+        <EditText
+            android:id="@+id/membership_id"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_alignStart="@+id/password_bar"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/loginbar"
+            android:ems="16"
+            android:inputType="textPassword"
+            android:text=""
+            android:textSize="17dp"
+            android:textColor="#000000"
+            android:textCursorDrawable="@null"/>
+
+
+
+
+        <TextView
+        android:id="@+id/membership_password_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="7dp"
+        android:layout_marginBottom="5dp"
+        android:text="비밀번호"
+        android:textSize="10dp" />
+
+        <EditText
+            android:id="@+id/membership_password_text"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_alignStart="@+id/password_bar"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/loginbar"
+            android:ems="16"
+            android:inputType="textPassword"
+            android:text=""
+            android:textSize="17dp"
+            android:textColor="#000000"
+            android:textCursorDrawable="@null"/>
+
+        <TextView
+            android:id="@+id/membership_password_check_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="7dp"
+            android:layout_marginBottom="5dp"
+            android:text="비밀번호 확인"
+            android:textSize="10dp" />
+
+        <EditText
+            android:id="@+id/membership_password_check_text"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_alignStart="@+id/password_bar"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/loginbar"
+            android:ems="16"
+            android:inputType="textPassword"
+            android:text=""
+            android:textSize="17dp"
+            android:textColor="#000000"
+            android:textCursorDrawable="@null"/>
+
+        <TextView
+            android:id="@+id/membership_email_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="7dp"
+            android:layout_marginBottom="5dp"
+            android:text="이메일"
+            android:textSize="10dp" />
+
+        <EditText
+            android:id="@+id/membership_email_text"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_alignStart="@+id/password_bar"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/loginbar"
+            android:ems="16"
+            android:inputType="text"
+            android:text=""
+            android:textSize="17dp"
+            android:textColor="#000000"
+            android:textCursorDrawable="@null"/>
+
+    </LinearLayout>
+    <Button
+        android:id="@+id/reg_main_go"
+        android:layout_marginRight="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/loginbutton"
+        android:layout_centerHorizontal="true"
+        android:text="회원가입"
+        android:textSize="25dp"
+        android:layout_below="@id/membership_layout"
+        />
+
+</RelativeLayout>
